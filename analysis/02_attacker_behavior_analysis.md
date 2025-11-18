@@ -8,17 +8,17 @@ This section analyses the attacker's behavior, focusing on reconnaissance activi
 #### Top 10 Most Used Commands 
 
 | Command Line Input | Count |
-| --- | --- | 
-| `/ip cloud print` | 4 |
-| cat /proc/uptime 2 > /dev/null &#124; cut -d. -f1 | 4 |
-| `uname -a` | 3 |
-| `Accept-Encoding: gzip` | 2 |
-| `cat /proc/cpuinfo` | 2 | 
-| echo Hi &#124; cat -n | 2 |
-| `ifconfig` | 2 | 
-| `locate D877F783D5D3EF8Cs` | 2 |
-| `ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*` | 2 |
-| ps -ef &#124; grep '[Mm]iner' | 2 |
+| --- | --- |
+| /ip cloud print | 4 |
+| cat /proc/uptime 2 > /dev/null \| cut -d. -f1 | 4 |
+| uname -a | 3 |
+| Accept-Encoding: gzip | 2 |
+| cat /proc/cpuinfo | 2 |
+| echo Hi \| cat -n | 2 |
+| ifconfig | 2 |
+| locate D877F783D5D3EF8Cs | 2 |
+| ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/* | 2 |
+| ps -ef \| grep '[Mm]iner' | 2 |
 
 Based on the observed commands the attacker was conducting reconnaissance with the goal of gathering as much information as possible about the target system. They collected details about the operating system, hardware and network configuration using commands such as uname -a, cat /proc/cpuinfo, ifconfig and cat /proc/uptime. This information was likely used to assess the system's performance capabilities and determine whether it could be used for cryptomining as well as to check whether any mining software was already running on the machine.
 
