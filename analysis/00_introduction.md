@@ -3,7 +3,7 @@
 This section provides a short overview of the collected data establishing a baseline for further analysis. It presents the total number of attacks recorded and illustrates how these events are distributed across the deployed honeypots without delving into detailed analyses.
 
 This dataset consists of 11363 recorded attack events collected from a multi-honeypot deployment. Data was gathered continuously over a 10-hour period within a single day without interruptions. The environment included multiple honeypot services provided by [T-Pot](https://github.com/telekom-security/tpotce) hosted on an [Azure Virtual Machine](https://azure.microsoft.com) and the collected  data was analyzed and visualized using [Kibana](https://github.com/elastic/kibana).
-
+ 
 The table below presents the distribution of attacks across the deployed honeypots, highlighting each honeypots relative share of the overall attack activity.
 
 | Honeypot | Count | % of total attacks (11363) | Project link |
